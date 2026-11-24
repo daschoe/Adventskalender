@@ -150,18 +150,18 @@
   animation-delay: 4s;
 }
 
-body{
-    margin-bottom: auto;
-}
-
 footer{
     text-align: center;
     color: slategray;
     font-size: smaller;
+    padding-top: auto;
     margin-top: auto;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0;
+    position: sticky;
+    bottom: 0%;
+    top: 100%;
 }
 
 footer a{
@@ -171,20 +171,8 @@ footer a{
 #tree{
     margin: auto;
     display:block;
-    width: 15%;
+    width: 10%;
     margin-bottom: 20px;
-}
-
-#garlands{
-    display: block;
-    margin: auto;
-}
-
-.garland{
-    height: 70px;
-    display: inline;
-    margin: 0;
-    padding: 0;
 }
 
 #calendar{
@@ -204,6 +192,7 @@ footer a{
 body{
     background-image: url("gfx/bg.gif");
     background-repeat: repeat;
+    min-height:100vh;
 }
 
 header{
