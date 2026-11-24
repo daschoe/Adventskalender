@@ -35,6 +35,19 @@
         <a class="number" href="#" target="_blank" rel="noopener noreferrer"><img src="gfx/23.gif" alt="23"></a>
         <a class="number" href="#" target="_blank" rel="noopener noreferrer"><img src="gfx/24.gif" alt="24"></a>
     </div>
+
+    <script> // hide all upcoming days
+        let now = new Date();
+
+        let elements = document.getElementsByClassName('number');
+        
+        for (let i = 0; i < elements.length; i++) {
+            if (i+1 > now.getDate() || now.getMonth()+1<12) {
+                elements[i].style.visibility = "hidden";
+            }
+        }
+    </script>
+
     <div class="snowflakes" aria-hidden="true">
         <div class="snowflake">
             <div class="inner">❅</div>
